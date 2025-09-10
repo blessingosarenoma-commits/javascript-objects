@@ -1,11 +1,12 @@
-console.log("happy!");
+console.log("car!");
 
-const emotion = {
-  name: "Bob",
-  age: 30,
-  favouriteColour: "red",
-  sayHello: function () {
-    console.log("Hello!");
+const car = {
+  model: "Jeep",
+  carcolour: "white",
+  getmodel: function () {
+    return this.model;
   },
 };
-emotion.sayHello();
+
+const model = car.getmodel();
+console.log(model);
